@@ -12,18 +12,18 @@ import { Pokemon } from '../../interfaces/pokemon';
 export class SearchPokemonComponent implements OnInit {
 
   constructor(private servicePokemon: PokemonService) { }
-  
+
   pokemon?: Pokemon;
 
   ngOnInit(): void {
-    this.servicePokemon.getPokemon().subscribe({
-      next: (poke: Pokemon | undefined) => {
-        console.log(poke);
-        this.pokemon = poke;
-      },
-      error: (err) => {
-        console.log(err);
-      }
-    });
+    // this.servicePokemon.getPokemon().subscribe({
+    //   next: (poke: Pokemon | undefined) => {
+    //     console.log(poke);
+    //     this.pokemon = poke;
+    //   },
+    //   error: (err) => {
+    //     console.log(err);
+    //   }
+    // });
   }
 }

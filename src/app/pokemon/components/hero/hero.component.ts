@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Pokemon } from '../../interfaces/pokemon';
 
 @Component({
   selector: 'app-hero',
@@ -9,4 +10,6 @@ import { Component } from '@angular/core';
 })
 export class HeroComponent {
 
+  @Input()
+  pokemon!: Pokemon;
 }

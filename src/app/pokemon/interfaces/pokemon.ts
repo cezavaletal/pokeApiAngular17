@@ -175,6 +175,7 @@ export interface Stat {
 export interface Type {
     slot: number;
     type: Species;
+    name: string;
 }
 export interface Pokemon {
 }
